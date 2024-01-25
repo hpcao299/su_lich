@@ -1,11 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Quang Trung đại phá Quân Thanh | Sử Lịch</title>
+        <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+        <script src="/js/tailwind-config.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <h1>Quang trung dai pha quan thanh</h1>
+        <div
+            class="bg-white text-black antialiased dark:bg-gray-950 dark:text-white font-space-grotesk"
+        >
+            <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+                <div class="min-h-screen">
+                    <header class="flex items-center justify-between pt-10 pb-6">
+                        <div>
+                            <a href="/">
+                                <img
+                                    src="/img/logo-transparent.png"
+                                    alt="Sử Lịch"
+                                    class="w-auto h-[72px]"
+                                />
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-4 leading-5 sm:space-x-6">
+                            <a
+                                href="/about-us.html"
+                                class="font-medium text-gray-900 dark:text-gray-100"
+                                >Về chúng tôi</a
+                            >
+                            <button aria-label="Toggle Dark Mode" id="darkModeToggle">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    class="h-6 w-6 text-gray-900 dark:text-gray-100 hidden dark:inline"
+                                >
+                                    <path
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    class="h-6 w-6 text-gray-900 dark:text-gray-100 dark:hidden"
+                                >
+                                    <path
+                                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </header>
+                    <main class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+                        <div class="fixed bottom-8 right-8 hidden flex-col gap-3 md:flex">
+                            <button
+                                aria-label="Scroll To Top"
+                                id="scroll-to-top"
+                                class="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+                            >
+                                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <article>
+                            <div class="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+                                <header
+                                    class="pt-6 xl:pb-6 pb-10 xl:pb-14 border-b border-gray-200 dark:border-gray-700"
+                                >
+                                    <div class="space-y-1 text-center">
+                                        <div
+                                            class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400"
+                                        >
+                                            Tháng 12
+                                        </div>
+                                        <div>
+                                            <h1
+                                                class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+                                            >
+                                                Quang Trung đại phá Quân Thanh
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div
+                                    class="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-10 xl:divide-y-0"
+                                >
+                                    <div
+                                        class="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0"
+                                    >
+                                        <div class="prose pb-8 pt-6 max-w-none dark:prose-invert">
+                                            <div>
+                                                <img
+                                                    src="/img/quang-trung.png"
+                                                    alt="Quang Trung đại phá Quân Thanh"
+                                                    class="w-full h-auto object-cover object-center"
+                                                />
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Cumque facilis facere accusantium consequatur
+                                                modi, neque accusamus placeat sunt laudantium omnis
+                                                maiores nesciunt reiciendis aliquam nostrum eligendi
+                                                id error ratione quasi!
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Cumque facilis facere accusantium consequatur
+                                                modi, neque accusamus placeat sunt laudantium omnis
+                                                maiores nesciunt reiciendis aliquam nostrum eligendi
+                                                id error ratione quasi!
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Cumque facilis facere accusantium consequatur
+                                                modi, neque accusamus placeat sunt laudantium omnis
+                                                maiores nesciunt reiciendis aliquam nostrum eligendi
+                                                id error ratione quasi!
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Cumque facilis facere accusantium consequatur
+                                                modi, neque accusamus placeat sunt laudantium omnis
+                                                maiores nesciunt reiciendis aliquam nostrum eligendi
+                                                id error ratione quasi!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <footer class="xl:order-first">
+                                        <div class="pt-6">
+                                            <div
+                                                class="pb-4 xl:pb-8 border-b border-solid border-gray-200 dark:border-gray-700"
+                                            >
+                                                <a
+                                                    class="text-primary hover:text-darkPrimary"
+                                                    href="/"
+                                                    >← Quay lại trang chủ</a
+                                                >
+                                            </div>
+                                            <div class="flex flex-col gap-4 pt-4">
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 1
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a
+                                                            href="/chien-tranh-tien-ly-luong-545-550.html"
+                                                            >Chiến tranh Tiền Lý - Lương (545 -
+                                                            550)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 2
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/chien-dich-phat-chiem-1069.html"
+                                                            >Chiến dịch Phạt Chiêm (1069)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 3
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/tran-bach-dang-nam-938.html"
+                                                            >Trận Bạch Đằng (938)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 4
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/tran-rach-gam-xoai-mut.html"
+                                                            >Trận Rạch Gầm - Xoài Mút</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 5
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/khoi-nghia-lam-son-1418-1427.html"
+                                                            >Khởi nghĩa Lam Sơn (1418 - 1427)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 6
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/tran-cang-eo-1643.html"
+                                                            >Trận Cảng Eo (1643)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 7
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a
+                                                            href="/chien-tranh-mong-nguyen-dai-viet-lan-2-1285.html"
+                                                            >Chiến tranh Mông Nguyên - Đại Việt lần
+                                                            2 ( 1285)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 8
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/le-dai-hanh-binh-chiem.html"
+                                                            >Lê Đại Hành Bình Chiêm</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 9
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a
+                                                            href="/chien-tranh-dai-viet-lan-xang-1478-1480.html"
+                                                            >Chiến tranh Đại Việt - Lan Xang (1478 -
+                                                            1480)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 10
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a
+                                                            href="/chien-tranh-viet-xiem-1841-1845.html"
+                                                            >Chiến tranh Việt - Xiêm (1841 -
+                                                            1845)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 11
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a href="/dai-viet-chiem-thanh-1611.html"
+                                                            >Đại Việt - Chiêm Thành (1611)</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                                                    >
+                                                        Tháng 12
+                                                    </div>
+                                                    <div
+                                                        class="text-primary hover:text-darkPrimary leading-5 mt-0.5"
+                                                    >
+                                                        <a
+                                                            href="/quang-trung-dai-pha-quan-thanh.html"
+                                                            >Quang Trung đại phá Quân Thanh</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+                    <footer class="mt-16 pb-8 flex items-center justify-center">
+                        <div class="flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                            <div>Sử Lịch</div>
+                            <div>•</div>
+                            <div>© 2024</div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/dark-mode.js"></script>
+        <script src="/js/scroll-to-top.js"></script>
     </body>
 </html>
