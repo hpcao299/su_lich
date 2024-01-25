@@ -1,23 +1,22 @@
 const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
+const htmlElement = document.getElementsByTagName('html')[0];
 
 darkModeToggle.addEventListener('click', function () {
-    console.log(body.classList.contains('dark'));
-    if (body.classList.contains('dark')) {
+    if (htmlElement.classList.contains('dark')) {
         localStorage.theme = 'light';
     } else {
         localStorage.theme = 'dark';
     }
 
-    // Toggle the 'dark-mode' class on the body
-    body.classList.toggle('dark');
+    // Toggle the 'dark-mode' class on the htmlElement
+    htmlElement.classList.toggle('dark');
 });
 
 if (
     localStorage.theme === 'dark' ||
     (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
 ) {
-    body.classList.add('dark');
+    htmlElement.classList.add('dark');
 } else {
-    body.classList.remove('dark');
+    htmlElement.classList.remove('dark');
 }
