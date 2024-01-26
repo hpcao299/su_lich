@@ -3,13 +3,174 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About us</title>
+        <title>Về chúng tôi | Sử Lịch</title>
         <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png" />
-        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="manifest" href="/site.webmanifest" />
+        <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+        <script src="./js/tailwind-config.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
-    <body>
-        <h1 class="text-red-500 text-center text-3xl">Đang cập nhật</h1>
+    <body class="bg-white dark:bg-gray-950">
+        <div class="text-black antialiased dark:text-white font-space-grotesk">
+            <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+                <div class="min-h-screen">
+                    <header class="flex items-center justify-between pt-10 pb-6">
+                        <div>
+                            <a href="./">
+                                <img
+                                    src="./img/logo-transparent.png"
+                                    alt="Sử Lịch"
+                                    class="w-auto h-[72px]"
+                                />
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-4 leading-5 sm:space-x-6">
+                            <a
+                                href="./about-us.html"
+                                class="font-medium text-gray-900 dark:text-gray-100"
+                                >Về chúng tôi</a
+                            >
+                            <button aria-label="Toggle Dark Mode" id="darkModeToggle">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    class="h-6 w-6 text-gray-900 dark:text-gray-100 hidden dark:inline"
+                                >
+                                    <path
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    class="h-6 w-6 text-gray-900 dark:text-gray-100 dark:hidden"
+                                >
+                                    <path
+                                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </header>
+                    <main>
+                        <div class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <div class="space-y-2 pb-8 pt-6 md:space-y-5">
+                                <h1
+                                    class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+                                >
+                                    Về chúng tôi
+                                </h1>
+                            </div>
+                            <div
+                                class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"
+                            >
+                                <div
+                                    class="flex flex-col items-center justify-center space-x-2 pt-8"
+                                >
+                                    <img src="./img/logo-transparent.png" alt="Sử Lịch" />
+                                </div>
+                                <div
+                                    class="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2"
+                                >
+                                    <p>
+                                        Sử Lịch áp dụng công nghệ thẻ NFC để lưu trữ dữ liệu các
+                                        cuộc chiến và thông tin lịch sử cụ thể của từng sự kiện
+                                    </p>
+                                    <span><strong>Cách sử dụng thẻ NFC:</strong></span>
+                                    <ul>
+                                        <li>
+                                            Đơn giản, bạn chỉ cần đưa mặt sau của điện thoại vào vị
+                                            trí đánh dấu NFC của trang lịch
+                                        </li>
+                                        <li>
+                                            Một trang thông tin của Sử Lịch sẽ hiện lên ngay sau đó
+                                            thui.
+                                        </li>
+                                    </ul>
+                                    <span
+                                        ><strong
+                                            >Các cuộc kháng chiến tiêu biểu của Sử Lịch:</strong
+                                        ></span
+                                    >
+                                    <ul>
+                                        <li>Chiến tranh Tiền Lý - Lương</li>
+                                        <li>Chiến dịch Phạt Chiêm</li>
+                                        <li>Trận Bạch Đằng</li>
+                                        <li>Trận Rạch Gầm - Xoài Mút</li>
+                                        <li>Khởi nghĩa Lam Sơn</li>
+                                        <li>Trân cảng Eo</li>
+                                        <li>Chiến trang Mông Nguyên - Đại Việt lần 2</li>
+                                        <li>Lê Đại Hành bình Chiêm</li>
+                                        <li>Chiến tranh Đại Việt - Lan Xang</li>
+                                        <li>Chiến tranh Việt - Xiêm</li>
+                                        <li>Đại Việt - Chiêm Thành</li>
+                                        <li>Quang Trung đại phá quân Thanh</li>
+                                    </ul>
+                                    <p><strong>Sử Lịch được tạo bởi:</strong></p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/danglkquynh"
+                                                >Đặng Lê Khánh Quỳnh</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/tuctuc09"
+                                                >Đinh Ngọc Thanh Trúc</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/honganh.ha.9421450"
+                                                >Hà Hồng Anh</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.facebook.com/profile.php?id=100072996443065"
+                                                >Đặng Thị Ngọc Lợi</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.facebook.com/profile.php?id=100080439150247"
+                                                >Tô Huỳnh Đức</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/ch.phuc2909/"
+                                                >Cao Hoàng Phúc</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <span
+                                        >Tụi mình đến từ lớp
+                                        <strong>11A6 - THPT Phú Nhuận</strong></span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer class="mt-16 pb-8 flex items-center justify-center">
+                        <div class="flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                            <div>Sử Lịch</div>
+                            <div>•</div>
+                            <div>© 2024</div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/dark-mode.js"></script>
     </body>
 </html>
